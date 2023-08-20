@@ -3,8 +3,8 @@
 set -x
 set -e
 
-DATA_DIR="/home/marvinpeng/simkgc/SimKGC-prefix/data/WN18RR"
-model_path="/home/marvinpeng/simkgc/checkpoints/wn18rr/model_best.mdl"
+DATA_DIR="PathToRepo/data/WN18RR"
+model_path="PathToRepo/checkpoints/wn18rr/model_best.mdl"
 RELATION_PATH="${DATA_DIR}/relations.json"
 
 

@@ -3,13 +3,13 @@
 set -x
 set -e
 
-DATA_DIR="$1"
-model_path="$2"
+DATA_DIR="PathToRepo/data/wiki5m_trans"
+model_path="PathToRepo/checkpoints/wn18rr/model_best.mdl"
 RELATION_PATH="${DATA_DIR}/relation.json"
 
 
 python3 -u eval_wiki5m_trans.py \
---task "WN18RR" \
+--task "wiki5m_trans" \
 --is-test \
 --eval-model-path "${model_path}" \
 --rel-path "${RELATION_PATH}" \
